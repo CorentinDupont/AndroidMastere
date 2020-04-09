@@ -28,11 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button helloWorldButton = this.findViewById(R.id.hello_world_button);
         Button readerButton = this.findViewById(R.id.reader_button);
         Button savedCounterButton = this.findViewById(R.id.saved_counter_button);
+        Button timerButton = this.findViewById(R.id.timer_button);
 
         // Add on click listeners
         helloWorldButton.setOnClickListener(this);
         readerButton.setOnClickListener(this);
         savedCounterButton.setOnClickListener(this);
+        timerButton.setOnClickListener(this);
     }
 
     /**
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.saved_counter_button:
                 intent = new Intent(this, SavedCounterActivity.class);
+                break;
+            case R.id.timer_button:
+                intent = new Intent(this, Timer1Activity.class);
                 break;
             default:
                 Context context = getApplicationContext();

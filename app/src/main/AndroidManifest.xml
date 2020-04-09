@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SavedCounterActivity"></activity>
+        <activity android:name=".Timer2Activity"></activity>
+        <activity android:name=".Timer1Activity" />
+        <activity android:name=".SavedCounterActivity" />
         <activity android:name=".ReaderActivity" />
         <activity android:name=".HelloWorldActivity" />
         <activity android:name=".MainActivity">
