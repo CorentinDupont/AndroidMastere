@@ -13,4 +13,7 @@
     </string>
     <string name="counter_up">+ Incrémenter</string>
     <string name="default_counter_text">Aucune valeur donnée au counter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
