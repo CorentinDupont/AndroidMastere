@@ -44,7 +44,7 @@ public class ReaderPageDialogFragment extends DialogFragment {
 
         builder
             .setView(view)
-            .setNegativeButton("Non", new DialogInterface.OnClickListener() {
+            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int id)
                 {

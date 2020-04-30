@@ -31,7 +31,28 @@ public class ReaderActivity extends AppCompatActivity implements View.OnClickLis
         ArrayList<String> texts = new ArrayList<>();
         texts.add("Je suis le texte de la première page.");
         texts.add("Voici le texte de la deuxième page");
-        texts.add("Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable.");
+        texts.add("Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable." +
+                "Et par magie, nous voici sur la dernière page de ce bouquin. 100 balles. Rentable.");
 
         ReaderPageAdapter adapter = new ReaderPageAdapter(getSupportFragmentManager(), texts);
         ViewPager viewPager = findViewById(R.id.reader_view_pager);

@@ -28,7 +28,7 @@ public class ReaderPageAdapter extends FragmentStatePagerAdapter {
         ReaderPageFragment fragment = new ReaderPageFragment();
         Bundle bundle = new Bundle();
         bundle.putString(ReaderPageFragment.ARG_PAGE_TEXT, texts.get(i));
-        bundle.putInt(ReaderPageFragment.ARG_PAGE_NUMBER, i);
+        bundle.putInt(ReaderPageFragment.ARG_PAGE_NUMBER, i + 1);
         fragment.setArguments(bundle);
 
         return fragment;
