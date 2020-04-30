@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MemoActivity"></activity>
+        <activity android:name=".PaintingActivity"></activity>
+        <activity android:name=".MemoActivity" />
         <activity android:name=".Timer2Activity" />
         <activity android:name=".Timer1Activity" />
         <activity android:name=".SavedCounterActivity" />
