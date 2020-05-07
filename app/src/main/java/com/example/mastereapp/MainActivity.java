@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button timerButton = this.findViewById(R.id.timer_button);
         Button memoButton = this.findViewById(R.id.memo_text_et);
         Button paintButton = this.findViewById(R.id.paint_button);
+        Button bitmapButton = this.findViewById(R.id.bitmap_button);
 
         // Add on click listeners
         helloWorldButton.setOnClickListener(this);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         timerButton.setOnClickListener(this);
         memoButton.setOnClickListener(this);
         paintButton.setOnClickListener(this);
+        bitmapButton.setOnClickListener(this);
     }
 
     /**
@@ -69,9 +71,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.paint_button:
                 intent = new Intent(this, PaintingActivity.class);
                 break;
+            case R.id.bitmap_button:
+                intent = new Intent(this, BitmapActivity.class);
+                break;
             default:
                 Context context = getApplicationContext();
-                Toast.makeText(context, "Aucune activité n'est lié à ce bouton.", Toast.LENGTH_SHORT);
+                Toast.makeText(context, "Aucune activité n'est liée à ce bouton.", Toast.LENGTH_SHORT);
         }
 
         if (intent != null) {
