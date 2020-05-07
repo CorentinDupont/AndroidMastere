@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button paintButton = this.findViewById(R.id.paint_button);
         Button bitmapButton = this.findViewById(R.id.bitmap_button);
         Button contactButton = this.findViewById(R.id.contact_button);
+        Button notificationButton = this.findViewById(R.id.notification_button);
 
         // Add on click listeners
         helloWorldButton.setOnClickListener(this);
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         paintButton.setOnClickListener(this);
         bitmapButton.setOnClickListener(this);
         contactButton.setOnClickListener(this);
+        notificationButton.setOnClickListener(this);
     }
 
     /**
@@ -78,6 +80,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.contact_button:
                 intent = new Intent(this, ContactActivity.class);
+                break;
+            case R.id.notification_button:
+                intent = new Intent(this, NotificationActivity.class);
                 break;
             default:
                 Context context = getApplicationContext();
