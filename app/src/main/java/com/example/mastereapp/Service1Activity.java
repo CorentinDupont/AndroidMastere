@@ -23,12 +23,15 @@ public class Service1Activity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
+        Intent intent = null;
         switch (v.getId()) {
-            case R.id.start_intent_service_button: {
-                Intent intent = new Intent(this, MonIntentService.class);
+            case R.id.start_intent_service_button:
+                intent = new Intent(this, MonIntentService.class);
                 intent.putExtra("counter", 0);
                 startService(intent);
-            }
+            case R.id.go_to_service2_button:
+                intent = new Intent(this, Service2Activity.class);
+                startActivity(intent);
         }
     }
 }
