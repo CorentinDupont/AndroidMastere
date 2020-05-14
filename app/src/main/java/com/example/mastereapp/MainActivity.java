@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button contactButton = this.findViewById(R.id.contact_button);
         Button notificationButton = this.findViewById(R.id.notification_button);
         Button asyncButton = this.findViewById(R.id.async_button);
+        Button serviceButton = this.findViewById(R.id.service_button);
 
         // Add on click listeners
         helloWorldButton.setOnClickListener(this);
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         contactButton.setOnClickListener(this);
         notificationButton.setOnClickListener(this);
         asyncButton.setOnClickListener(this);
+        serviceButton.setOnClickListener(this);
     }
 
     /**
@@ -88,6 +90,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.async_button:
                 intent = new Intent(this, AsyncActivity.class);
+                break;
+            case R.id.service_button:
+                intent = new Intent(this, Service1Activity.class);
                 break;
             default:
                 Context context = getApplicationContext();
